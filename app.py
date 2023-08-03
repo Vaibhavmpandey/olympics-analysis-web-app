@@ -148,10 +148,10 @@ if user_menu == 'Athlete wise Analysis':
         x.append(temp_df[temp_df['Medal'] == 'Gold']['Age'].dropna())
         name.append(sport)
 
-    fig = ff.create_distplot(x, name, show_hist=False, show_rug=False)
-    fig.update_layout(autosize=False, width=800, height=600)
-    st.title("Distribution of Age wrt Sports(Gold Medalist)")
-    st.plotly_chart(fig)
+    # fig = ff.create_distplot(x, name, show_hist=False, show_rug=False)
+    # fig.update_layout(autosize=False, width=800, height=600)
+    # st.title("Distribution of Age wrt Sports(Gold Medalist)")
+    # st.plotly_chart(fig)
 
     sport_list = df['Sport'].unique().tolist()
     sport_list.sort()
